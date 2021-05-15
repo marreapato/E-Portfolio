@@ -1,0 +1,63 @@
+---
+name: Lucas
+surname: Rabelo
+position: Estágio
+phone: +55 (71) 98215-1856
+www: sites.google.com/view/data-journal/página-inicial
+email: lucasrabelop59@gmail.com
+github: marreapato
+date: _
+output:
+  vitae::twentyseconds: default
+  vitae::latexcv:
+    theme: classic
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+
+# Formação
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "Graduação em estatística", "2018-2023", "Universidade Federal da Bahia", "Salvador, Bahia"
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+# Projetos
+
+```{r}
+tribble(
+  ~ Year, ~ Type, ~ Desc,
+  "2019-2020", "Bolsa Pibic - Estudo da mortalidade por câncer em trabalhadores de uma hidrelétrica de 1985 a 2011.", "Projeto de pesquisa de iniciação científica financiando pela FAPESB (Fundação de Amparo à Pesquisa do Estado da Bahia). No projeto foi explorado o uso de índices estatísticos (Odds-Ratio) juntamente com métodos de estatística computacional (bootstrap), além do desenvolvimento de visualização de dados e a realização de um painel interativo. Ferramentas utilizadas: Linguagem R, Tableau e Power-BI. O projeto pode ser consultado no Github em: https://github.com/marreapato/Mortalidade_Cancer_Hidreletrica"
+) %>% 
+  brief_entries(
+    glue::glue("{Type}"),
+    Year, 
+    Desc
+  )
+
+
+tribble(
+  ~ Year, ~ Type, ~ Desc,
+  "2020-2021", "Bolsa Pibic - Estudo da mortalidade por câncer em trabalhadores de uma hidrelétrica de 1985 a 2011.", "Projeto de pesquisa de iniciação científica financiando pela FAPESB (Fundação de Amparo à Pesquisa do Estado da Bahia). No projeto foi explorado o uso de índices estatísticos (Odds-Ratio) e exposição ocupacional, métodos de estatística computacional (bootstrap), além do desenvolvimento de visualização de dados e a realização de um painel interativo. Ferramentas utilizadas: Linguagem R, Tableau e Power-BI. O projeto pode ser consultado no Github em: https://github.com/marreapato/Mortalidade_Cancer_Hidreletrica"
+) %>% 
+  brief_entries(
+    glue::glue("{Type}"),
+    Year, 
+    Desc
+  )
+
+```
+
+
+# Some stuff about me
+
+ * I poisoned myself doing research.
+ * I was the first woman to win a Nobel prize
+ * I was the first person and only woman to win a Nobel prize in two different sciences.
