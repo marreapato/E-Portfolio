@@ -31,7 +31,7 @@ tribble(
 ```{r}
 tribble(
   ~ Year, ~ Type, ~ Desc,
-  "2019-2020", "Bolsa Pibic - Estudo da mortalidade por câncer em trabalhadores de uma hidrelétrica de 1985 a 2011.", "Projeto de pesquisa de iniciação científica financiando pela FAPESB (Fundação de Amparo à Pesquisa do Estado da Bahia). No projeto foi explorado o uso de índices estatísticos (Odds-Ratio) juntamente com métodos de estatística computacional (bootstrap), além do desenvolvimento de visualização de dados e a realização de um painel interativo. Ferramentas utilizadas: Linguagem R, Excel, Tableau e Power-BI. O projeto pode ser consultado no Github em: https://github.com/marreapato/Mortalidade_Cancer_Hidreletrica"
+  "2019-2020", "Bolsa Pibic - Estudo da mortalidade por câncer em trabalhadores de uma hidrelétrica de 1985 a 2011.", "Projeto de pesquisa de iniciação científica financiando pela FAPESB (Fundação de Amparo à Pesquisa do Estado da Bahia). No projeto foi explorado o uso de índices estatísticos (Odds-Ratio) juntamente com métodos de estatística computacional (bootstrap), ferramentas para visualização de dados e foi desenvolvido um aplicativo de um painel interativo em R-Shiny. Ferramentas utilizadas: Linguagem R, Excel, Tableau e Power-BI. O projeto pode ser consultado no Github em: https://github.com/marreapato/Mortalidade_Cancer_Hidreletrica"
 ) %>% 
   brief_entries(
     glue::glue("{Type}"),
@@ -43,7 +43,7 @@ tribble(
 tribble(
   ~ Year, ~ Type, ~ Desc,
   "2020-2021", "Bolsa Pibic - Análise do comportamento espaço-temporal do COVID-19", "Projeto de pesquisa de iniciação científica financiando pelo CNPQ (Conselho Nacional de Desenvolvimento Científico e Tecnológico). No projeto foi feito um estudo sobre o comportamento espacial e temporal da Covid-19 com uma base de dados atualizada em tempo real, foram feitos mapas, tabelas, estudo de metodologias estatísticas para investigação de dependência espacial e espaço-temporal, posteriormente foram estudados e ajustados modelos de predição. Ferramentas utilizadas: Linguagem R. O projeto pode ser consultado no Github em:
-https://github.com/marreapato/Spatial_Temporal_Covid19_Studya"
+https://github.com/marreapato/Spatial_Temporal_Covid19_Study"
 ) %>% 
   brief_entries(
     glue::glue("{Type}"),
@@ -54,8 +54,51 @@ https://github.com/marreapato/Spatial_Temporal_Covid19_Studya"
 ```
 
 
-# Some stuff about me
+# Hard-Skills
 
- * I poisoned myself doing research.
- * I was the first woman to win a Nobel prize
- * I was the first person and only woman to win a Nobel prize in two different sciences.
+ * Programação: R (Intermediário/Avançado), Conhecimento em Python
+ * Análise de dados, Estudo e aplicação de metodologias estatísticas e Inferência.
+ * Idiomas: Inglês (Avançado/Fluente), Português (Nativo)
+ * Conhecimento em Excel, Word, Power-Point e Ferramentas colaborativas do Google.
+ 
+
+# Soft-Skills
+
+ * Trabalho em grupo.
+ * Disciplina.
+ * Vontade para aprender e aplicar ferramentas novas e/ou mais eficientes.
+ * Criatividade.
+ 
+# Certificados e Participações em eventos
+
+```{r talks}
+tribble(
+  ~ when, ~ title, ~ details, ~ where, ~ url,
+  "2020", "Curso", "The Data Scientist’s Toolbox", "John Hopkins University & Coursera", "https://coursera.org/share/0c8e136a1934ff1ae2e00d208abcc809",
+
+  ) %>% 
+  brief_entries(glue::glue("\\textbf{<title>}: <details> \\newline \\url{<url>}", .open = "<", .close = ">"), when, .protect = FALSE)
+
+tribble(
+  ~ when, ~ title, ~ details, ~ where, ~ url,
+  "2020", "Evento", "Introdução a Big Data Analytics", "UFBA", "https://drive.google.com/file/d/1madK_D78xb2DIGmhbQWQf398IGmMgWUd/view?usp=sharing",
+
+  ) %>% 
+  brief_entries(glue::glue("\\textbf{<title>}: <details> \\newline \\url{<url>}", .open = "<", .close = ">"), when, .protect = FALSE)
+
+
+
+tribble(
+  ~ when, ~ title, ~ details, ~ where, ~ url,
+  "2019", "Curso", "R Programming for Statistics and Data Science 2020", "Udemy", "https://www.udemy.com/certificate/UC-ZR7WIOHV/?utm_campaign=email&utm_source=sendgrid.com&utm_medium=email",
+  ) %>% 
+  brief_entries(glue::glue("\\textbf{<title>}: <details> \\newline \\url{<url>}", .open = "<", .close = ">"), when, .protect = FALSE)
+
+
+tribble(
+  ~ when, ~ title, ~ details, ~ where, ~ url,
+
+  "2019", "Curso", " Introdução ao R: Seja bem-vindo(a) ao tidyverse", "UFBA", "https://certificadorsiatex.ufba.br/certificadorSiatex/certificado.jsf?pce=223462&hash=RGT9LQ17ODM1YF1I&equ=0",  ) %>% 
+  brief_entries(glue::glue("\\textbf{<title>}: <details> \\newline \\url{<url>}", .open = "<", .close = ">"), when, .protect = FALSE)
+
+```
