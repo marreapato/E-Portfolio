@@ -1,0 +1,61 @@
+---
+name: Lucas
+surname: Rabelo
+position: "Estágio"
+phone: +55 (71) 98215-1856
+www: sites.google.com/view/data-journal/página-inicial
+email: "lucasrabelop59@gmail.com"
+github: marreapato
+date: _
+output: vitae::hyndman
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+
+# Formação
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "Graduação em estatística", "2018-2023", "Universidade Federal da Bahia", "Salvador, Bahia"
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+# Projetos
+
+```{r}
+tribble(
+  ~ Year, ~ Type, ~ Desc,
+  "2019-2020", "Bolsa Pibic - Estudo da mortalidade por câncer em trabalhadores de uma hidrelétrica de 1985 a 2011.", "Projeto de pesquisa de iniciação científica financiando pela FAPESB (Fundação de Amparo à Pesquisa do Estado da Bahia). No projeto foi explorado o uso de índices estatísticos (Odds-Ratio) juntamente com métodos de estatística computacional (bootstrap), além do desenvolvimento de visualização de dados e a realização de um painel interativo. Ferramentas utilizadas: Linguagem R, Excel, Tableau e Power-BI. O projeto pode ser consultado no Github em: https://github.com/marreapato/Mortalidade_Cancer_Hidreletrica"
+) %>% 
+  brief_entries(
+    glue::glue("{Type}"),
+    Year, 
+    Desc
+  )
+
+
+tribble(
+  ~ Year, ~ Type, ~ Desc,
+  "2020-2021", "Bolsa Pibic - Análise do comportamento espaço-temporal do COVID-19", "Projeto de pesquisa de iniciação científica financiando pelo CNPQ (Conselho Nacional de Desenvolvimento Científico e Tecnológico). No projeto foi feito um estudo sobre o comportamento espacial e temporal da Covid-19 com uma base de dados atualizada em tempo real, foram feitos mapas, tabelas, estudo de metodologias estatísticas para investigação de dependência espacial e espaço-temporal, posteriormente foram estudados e ajustados modelos de predição. Ferramentas utilizadas: Linguagem R. O projeto pode ser consultado no Github em:
+https://github.com/marreapato/Spatial_Temporal_Covid19_Studya"
+) %>% 
+  brief_entries(
+    glue::glue("{Type}"),
+    Year, 
+    Desc
+  )
+
+```
+
+
+# Some stuff about me
+
+ * I poisoned myself doing research.
+ * I was the first woman to win a Nobel prize
+ * I was the first person and only woman to win a Nobel prize in two different sciences.
