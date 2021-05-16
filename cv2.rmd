@@ -13,6 +13,7 @@ output:
     theme: classic
 ---
 
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(vitae)
@@ -34,7 +35,7 @@ tribble(
 ```{r}
 tribble(
   ~ Year, ~ Type, ~ Desc,
-  "2019-2020", "Bolsa Pibic - Estudo da mortalidade por câncer em trabalhadores de uma hidrelétrica de 1985 a 2011.", "Projeto de pesquisa de iniciação científica financiando pela FAPESB (Fundação de Amparo à Pesquisa do Estado da Bahia). No projeto foi explorado o uso de índices estatísticos (Odds-Ratio) juntamente com métodos de estatística computacional (bootstrap), ferramentas para visualização de dados e foi desenvolvido um aplicativo de um painel interativo em R-Shiny. Ferramentas utilizadas: Linguagem R, Excel, Tableau e Power-BI. O projeto pode ser consultado no Github em: https://github.com/marreapato/Mortalidade_Cancer_Hidreletrica"
+  "2019-2020", "Bolsa Pibic - Estudo da mortalidade por câncer em trabalhadores de uma hidrelétrica de 1985 a 2011.", "Projeto de pesquisa de iniciação científica financiando pela FAPESB. Ferramentas utilizadas: Linguagem R, Excel, Tableau e Power-BI, painel interativo desenvolvido em R-Shiny. O projeto pode ser consultado no Github em: https://github.com/marreapato/Mortalidade_Cancer_Hidreletrica"
 ) %>% 
   brief_entries(
     glue::glue("{Type}"),
@@ -45,7 +46,7 @@ tribble(
 
 tribble(
   ~ Year, ~ Type, ~ Desc,
-  "2020-2021", "Bolsa Pibic - Análise do comportamento espaço-temporal do COVID-19", "Projeto de pesquisa de iniciação científica financiando pelo CNPQ (Conselho Nacional de Desenvolvimento Científico e Tecnológico). No projeto foi feito um estudo sobre o comportamento espacial e temporal da Covid-19 com uma base de dados atualizada em tempo real, foram feitos mapas, tabelas, estudo de metodologias estatísticas para investigação de dependência espacial e espaço-temporal, posteriormente foram estudados e ajustados modelos de predição. Ferramentas utilizadas: Linguagem R. O projeto pode ser consultado no Github em:
+  "2020-2021", "Bolsa Pibic - Análise do comportamento espaço-temporal do COVID-19", "Projeto de pesquisa de iniciação científica financiando pelo CNPQ. No projeto foi feito um estudo sobre o comportamento espacial e temporal da Covid-19 com uma base de dados atualizada em tempo real, foram feitos mapas, tabelas, estudo de metodologias estatísticas para investigação de dependência espacial e espaço-temporal, posteriormente foram estudados e ajustados modelos de predição. Ferramentas utilizadas: Linguagem R. O projeto pode ser consultado no Github em:
 https://github.com/marreapato/Spatial_Temporal_Covid19_Study"
 ) %>% 
   brief_entries(
@@ -56,7 +57,20 @@ https://github.com/marreapato/Spatial_Temporal_Covid19_Study"
 
 ```
 
+# Projetos Pessoais
 
+```{r}
+tribble(
+  ~ Year, ~ Type, ~ Desc,
+  "2020", "Jogo (estilo Space-Invaders) desenvolvido em pygame", "Ferramentas utilizadas: Linguagem Python. O projeto pode ser consultado no Github em: https://github.com/marreapato/CoVid-19_The_Game"
+) %>% 
+  brief_entries(
+    glue::glue("{Type}"),
+    Year, 
+    Desc
+  )
+
+```
 # Hard-Skills
 
  * Programação: R (Intermediário/Avançado), Conhecimento em Python
@@ -105,3 +119,5 @@ tribble(
   brief_entries(glue::glue("\\textbf{<title>}: <details> \\newline \\url{<url>}", .open = "<", .close = ">"), when, .protect = FALSE)
 
 ```
+
+
