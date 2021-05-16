@@ -42,7 +42,7 @@ tribble(
 
 tribble(
   ~ Year, ~ Type, ~ Desc,
-  "2020-2021", "Bolsa Pibic - Análise do comportamento espaço-temporal do COVID-19", "Projeto de pesquisa de iniciação científica financiando pelo CNPQ. No projeto foi feito um estudo sobre o comportamento espacial e temporal da Covid-19 com uma base de dados atualizada em tempo real, foram feitos mapas, tabelas, estudo de metodologias estatísticas para investigação de dependência espacial e espaço-temporal, posteriormente foram estudados e ajustados modelos de predição. Ferramentas utilizadas: Linguagem R. O projeto pode ser consultado no Github em:
+  "2020-2021", "Bolsa Pibic - Análise do comportamento espaço-temporal do COVID-19", "Projeto de pesquisa de iniciação científica financiando pelo CNPQ. No projeto foi usada uma base de dados atualizada em tempo real, juntamente com estudo de metodologias estatísticas para investigação de dependência espacial e espaço-temporal, posteriormente foram estudados e ajustados modelos de predição. Ferramentas utilizadas: Linguagem R. O projeto pode ser consultado no Github em:
 https://github.com/marreapato/Spatial_Temporal_Covid19_Study"
 ) %>% 
   brief_entries(
@@ -70,9 +70,10 @@ tribble(
 # Hard-Skills
 
  * Programação: R (Intermediário/Avançado), Conhecimento em Python
- * Análise de dados, Estudo e aplicação de metodologias estatísticas e Inferência.
+ * Análise de dados, Estudo e aplicação de metodologias estatísticas, experiência com Machine-learning (básico).
  * Idiomas: Inglês (Avançado/Fluente), Português (Nativo)
  * Conhecimento em Excel, Word, Power-Point e Ferramentas colaborativas do Google.
+ 
  
 
 # Soft-Skills
