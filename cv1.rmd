@@ -70,8 +70,8 @@ tribble(
 # Hard-Skills
 
  * Programação: R (Intermediário/Avançado), Conhecimento em Python
- * Análise de dados, Estudo e aplicação de metodologias estatísticas, experiência com Machine-learning (básico).
- * Idiomas: Inglês (Avançado/Fluente), Português (Nativo)
+ * Análise de dados, Estudo e aplicação de metodologias estatísticas, experiência com Machine-learning (básico), Visualização de dados.
+ * Idiomas: Inglês (Avançado/Proficiente), Português (Nativo)
  * Conhecimento em Excel, Word, Power-Point e Ferramentas colaborativas do Google.
  
  
