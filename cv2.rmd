@@ -25,7 +25,7 @@ library(vitae)
 library(tibble)
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where,
-  "Graduação em estatística", "2018-2023", "Universidade Federal da Bahia", "Salvador, Bahia"
+  "Graduação em estatística", "2018-2022/2023", "Universidade Federal da Bahia", "Salvador, Bahia"
 ) %>% 
   detailed_entries(Degree, Year, Institution, Where)
 ```
