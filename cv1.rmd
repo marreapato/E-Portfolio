@@ -6,7 +6,7 @@ phone: +55 (71) 98215-1856
 www: sites.google.com/view/data-journal/página-inicial
 email: "lucasrabelop59@gmail.com"
 github: marreapato
-date: _
+date: Cargo:Estatístico
 output: vitae::hyndman
 ---
 
