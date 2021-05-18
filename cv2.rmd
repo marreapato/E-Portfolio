@@ -90,16 +90,18 @@ tribble(
 # Certificados e Participações em eventos
 
 ```{r talks}
+
+
 tribble(
   ~ when, ~ title, ~ details, ~ where, ~ url,
-  "2020", "Curso", "The Data Scientist’s Toolbox", "John Hopkins University & Coursera", "https://coursera.org/share/0c8e136a1934ff1ae2e00d208abcc809",
+  "2021", "Evento", "Introdução a Big Data Analytics", "UFBA", "https://drive.google.com/file/d/1madK_D78xb2DIGmhbQWQf398IGmMgWUd/view?usp=sharing",
 
   ) %>% 
   brief_entries(glue::glue("\\textbf{<title>}: <details> \\newline \\url{<url>}", .open = "<", .close = ">"), when, .protect = FALSE)
 
 tribble(
   ~ when, ~ title, ~ details, ~ where, ~ url,
-  "2020", "Evento", "Introdução a Big Data Analytics", "UFBA", "https://drive.google.com/file/d/1madK_D78xb2DIGmhbQWQf398IGmMgWUd/view?usp=sharing",
+  "2020", "Curso", "The Data Scientist’s Toolbox", "John Hopkins University & Coursera", "https://coursera.org/share/0c8e136a1934ff1ae2e00d208abcc809",
 
   ) %>% 
   brief_entries(glue::glue("\\textbf{<title>}: <details> \\newline \\url{<url>}", .open = "<", .close = ">"), when, .protect = FALSE)
@@ -118,6 +120,15 @@ tribble(
 
   "2019", "Curso", " Introdução ao R: Seja bem-vindo(a) ao tidyverse", "UFBA", "https://certificadorsiatex.ufba.br/certificadorSiatex/certificado.jsf?pce=223462&hash=RGT9LQ17ODM1YF1I&equ=0",  ) %>% 
   brief_entries(glue::glue("\\textbf{<title>}: <details> \\newline \\url{<url>}", .open = "<", .close = ">"), when, .protect = FALSE)
+
+
+
+tribble(
+  ~ when, ~ title, ~ details, ~ where, ~ url,
+
+  "2019", "Evento", " LED Date - Um encontro sobre Estatística e Data Science", "UFBA", "https://gi-upload-production.s3.amazonaws.com/uploads/enrollment_certificate/1573501446_2a3e76d8-cdef-4db2-86e6-c5403b7569e1.pdf",  ) %>% 
+  brief_entries(glue::glue("\\textbf{<title>}: <details> \\newline \\url{<url>}", .open = "<", .close = ">"), when, .protect = FALSE)
+
 
 ```
 
